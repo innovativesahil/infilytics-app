@@ -19,6 +19,7 @@ export default function App() {
         isAuthenticated={isAuthenticated}
         isVerifying={isVerifying}
       />
+      <Route exact path="/login" component={Login} />
       <ProtectedRoute
         exact
         path="/:postId"
@@ -26,7 +27,6 @@ export default function App() {
         isAuthenticated={isAuthenticated}
         isVerifying={isVerifying}
       />
-      <Route path="/login" component={Login} />
     </Switch>
   );
 }
