@@ -9,7 +9,7 @@ import {
   VERIFY_SUCCESS
 } from "./../actions/index";
 
-export default (
+export default function authReducer(
   state = {
     isLoggingIn: false,
     isLoggingOut: false,
@@ -20,7 +20,7 @@ export default (
     user: {}
   },
   action
-) => {
+) {
   switch (action.type) {
     case LOGIN_REQUEST:
       return {
@@ -75,4 +75,4 @@ export default (
     default:
       return state;
   }
-};
+}

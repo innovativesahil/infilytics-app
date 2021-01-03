@@ -11,17 +11,17 @@ export default function FullPost() {
   const { postId } = useParams();
   useEffect(() => {
     dispatch(fetchFullPost(postId));
-  }, []);
+  });
 
   return (
-    <div className="container">
+    <div className="container p-2">
       <div key={post?.id}>
         <h3>{post?.title}</h3>
         <p>{post?.body}</p>
       </div>
-      <p>
-        <Comments postId={postId} />
-      </p>
+      <hr></hr>
+      <h3>Comments</h3>
+      <Comments postId={postId} />
     </div>
   );
 }

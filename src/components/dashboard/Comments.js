@@ -8,7 +8,7 @@ export default function Comments({ postId }) {
 
   useEffect(() => {
     dispatch(fetchComments(postId));
-  }, []);
+  });
 
   return (
     <div>
