@@ -12,13 +12,17 @@ export default function Comments({ postId }) {
 
   return (
     <div>
-      {comments.map(comment => (
-        <div>
-          <p>{comment.name}</p>
-          <p>{comment.email}</p>
-          <p>{comment.body}</p>
-        </div>
-      ))}
+      <ul class="list-group">
+        {comments.map(comment => (
+          <li key={comment.id} className="list-group-item">
+            {/* <p>{comment.name}</p> */}
+            <p>
+              <strong>{comment.email}</strong>
+            </p>
+            <p>{comment.body}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

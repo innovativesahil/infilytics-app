@@ -22,5 +22,9 @@ export default function Posts() {
     </div>
   ));
 
-  return <div>{postItems}</div>;
+  return (
+    <>
+      <div>{postItems}</div>
+    </>
+  );
 }
