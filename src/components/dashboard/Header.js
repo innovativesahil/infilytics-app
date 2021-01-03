@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <div className="container">
       <nav class="navbar navbar-dark bg-dark">
-        <button className="btn btn-danger btn-sm" onClick={handleLogout}>
+        <button className="btn btn-danger btn-sm " onClick={handleLogout}>
           Logout
         </button>
         {isLoggingOut && <p>Logging Out....</p>}

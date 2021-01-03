@@ -18,9 +18,9 @@ export default function FullPost() {
   return (
     <>
       <Header />
-      <div className="container p-2 jumbotron">
-        <div className="p-2" key={post?.id}>
-          <h3>{post?.title}</h3>
+      <div className="container p-2 ">
+        <div className=" jumbotron p-3" key={post?.id}>
+          <h3 className="display-4">{post?.title}</h3>
           <p>{post?.body}</p>
         </div>
         <hr></hr>
